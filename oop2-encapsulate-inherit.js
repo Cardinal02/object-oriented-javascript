@@ -258,3 +258,34 @@ Each Book instance should contain instances of the Authors, the Publishers, and 
 */
 
 //your code here...
+
+function title({books}){
+  return{
+    title:()=> console.log(`${books.title}`)
+ }
+}
+function author ({books}){
+  return{
+    author:()=> console.log(`${books.author}`)
+  }
+}
+function publisher({books}){
+  return{
+    publisher:()=> console.log(`${books.publisher}`)
+ }
+}
+
+function reviews ({books}){
+  return{
+    reviews:()=> console.log(`${books.title}`)
+ }
+}
+
+function bookcreator (books){
+  const book ={title:title}
+
+  return{
+    ...book,
+    ...
+  }
+}
